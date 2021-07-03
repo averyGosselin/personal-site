@@ -1,16 +1,8 @@
-:root{
-    --linkedin: #0072b1;
-}
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background: rgb(2,94,176);
     background: linear-gradient(140deg, rgba(2,94,176,1) 0%, rgba(37,75,247,1) 31%, rgba(0,212,255,1) 89%);
-}
-
-p {
-    color: white;
 }
 
 #card {
@@ -26,8 +18,12 @@ p {
     box-shadow: 3px 5px 5px darkslategray;
 }
 
+.content-container {
+    text-align: center;
+    margin: 20px;
+}
+
 #title {
-    color: white;
     text-align: left;
     font-weight: 100;
     font-size: 40;
@@ -40,7 +36,6 @@ p {
     font-weight: 100;
 }
 
-
 #about-container {
     margin: 0 auto;
     width: 90%;
@@ -48,29 +43,11 @@ p {
     text-align: center;
 }
 
-
-#container {
-    height: 75%;
-    width: 75%;
-    background-color: darkgray;
-    margin: 0 auto;
-}
-
 #spacer-1 {
     height: 20%;
 }
 #spacer-2 {
     height: 35%;
-}
-
-.fa-2x {
-    color: salmon;
-    size: 400px;
-    z-index: 2;
-}
-.content-container {
-    text-align: center;
-    margin: 20px;
 }
 
 .grid-container {
@@ -85,9 +62,14 @@ p {
     display: flex;
     align-items: center;
 }
-
 .grid-box:hover > i{
     animation: spin 2s;
+}
+
+.fa-2x {
+    color: lightblue;
+    size: 400px;
+    z-index: 2;
 }
 
 @keyframes spin {
