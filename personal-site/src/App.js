@@ -10,7 +10,7 @@ function App() {
         <div class="content-container">
           <div>
             <h1 id="title">Avery <LegendaryText text="Gosselin"/></h1>
-            <h3 id="tags">Software Development - Neuro Student - Partially Competent</h3>
+            <h3 id="tags">Software Development - Neuroscience Student - Partially Competent</h3>
             <hr></hr>
           </div>
             
@@ -39,7 +39,7 @@ function App() {
                   <img src="linkedin.png" class="icon" alt="linkedin"></img>
               </a>
 
-              <a class="grid-box" title="My Resume" href="avery-gosselin.pdf" target="_blank">
+              <a class="grid-box" title="My Resume" href="cv.pdf" target="_blank">
                   <img src="resume.png" class="icon" alt="resume"></img>
               </a>
           </div>
