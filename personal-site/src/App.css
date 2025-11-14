@@ -1,22 +1,25 @@
 .App {
   text-align: center;
-  color: #444
+  color: #444;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(bottom right, rgba(2,94,176,1), rgba(0,212,255,1));
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #card {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 800px;
+  width: min(900px, 100%);
   height: 460px;
   background-color: #eeeeee;
   box-shadow: 3px 5px 5px darkslategray;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 .content-container {
   text-align: center;
@@ -25,20 +28,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 250;
+  font-weight: normal;
 }
 
 #title {
   text-align: left;
-  font-weight: bold;
-  font-size: 40;
+  font-weight: lighter;
+  font-size: 40px;
   padding: 0em;
   line-height: .5em;
 }
 
 #tags {
   text-align: left;
-  font-weight: 150;
+  font-weight: bold;
+  font-size: 12px;
+  color: #01851e;
 }
 
 .grid-container {
@@ -59,26 +64,65 @@
 
 #about-container {
   width: 100%;
-  font-size: 12;
+  font-size: 16px;
   text-align: left;
 }
 
 .icon {
   width: 50px;
-  z-index: 2;
 }
 
+@media screen and (max-width: 900px) {
+  .App {
+    padding: 1.5rem;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  #card {
+    height: auto;
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotateZ(0);
+
+@media screen and (max-width: 950px), screen and (orientation: portrait) {
+  .App {
+    align-items: flex-start;
+    padding: 1.5rem 1rem 3rem;
   }
-  100% {
-    transform: rotateZ(360deg);
+
+  #card {
+    width: min(95vw, 520px);
+    min-height: 75vh;
+    padding: 2rem;
+    box-shadow: 3px 5px 5px darkslategray;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  #title {
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #tags {
+    text-align: center;
+  }
+
+  #about-container {
+    font-size: 14px;
+  }
+
+  .grid-container {
+    gap: 1rem;
+  }
+
+  .grid-box {
+    width: 100%;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .icon {
+    width: 40px;
   }
 }

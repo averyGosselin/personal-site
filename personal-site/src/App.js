@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 
-let gross = "Hi! My name is Avery, and I am a computer scientist turned neuro-studying-person. I received my Bachelor's degree in computer science from the University of Maine, where I had the opportunity to participate in a lot of amazing projects and experiences"
 
 function App() {
   return (
@@ -9,24 +7,20 @@ function App() {
       <div id="card">
         <div class="content-container">
           <div>
-            <h1 id="title">Avery <LegendaryText text="Gosselin"/></h1>
-            <h3 id="tags">Software Development - Neuroscience Student - Partially Competent</h3>
+            <h1 id="title">Avery <LegendaryGray text="Gosselin"/></h1>
+            <h3 id="tags">COMPUTER SCIENTIST · NEUROSCIENTIST · LIFETIME LEARNER</h3>
             <hr></hr>
           </div>
             
           <div id="about-container">
             <p>
-              <LegendaryText text="Hi!"/> My name is Avery, and welcome to my tiny website! 
+              <LegendaryText text="Hi!"/> Welcome to my tiny website,
               <br></br><br></br>
-              I received my Bachelor's degree in <LegendaryText text="computer science"/> from the University of Maine, 
-              where I had the opportunity to participate in a lot of amazing projects and 
-              experiences, and today I am pursuing a masters in <LegendaryText text="interdisciplinary brain science"/> at ETH and UZH in Zurich, Switzerland!
+              I received my Bachelor's degree in <LegendaryText text="computer science"/> from the University of Maine and today I am pursuing a Masters in <LegendaryText text="interdisciplinary brain science"/> at ETH and UZH in Zurich, Switzerland!
               <br></br><br></br>
-              My interests include <LegendaryText text="neuroscience"/>, <LegendaryText text="brain computer interfaces"/>, <LegendaryText text="robotics"/>, and getting to work on projects that 
-              will impact real people.
+              My professional interests include <LegendaryText text="neuro/life sciences"/>, <LegendaryText text="computation"/>, <LegendaryText text="robotics"/>, and working on interdisciplinary projects that impact real people.
               <br></br><br></br>
-              Please feel free to <LegendaryText text="connect with me"/>  if you'd like to chat or have any questions or opportunities where I could
-              work on something cool (I like doing that)!
+              Please feel free to <LegendaryText text="connect with me"/> to chat or if you have any questions.
             </p>
           </div>
 
@@ -51,7 +45,14 @@ function App() {
 
 function LegendaryText({text}) {
   return (
-    <span style={{color: "rgb(2,94,176)", fontWeight: "bold"}}>
+    <span style={{color: "#01851e", fontWeight: "bold"}}>
+      {text}
+    </span>
+  )
+}
+function LegendaryGray({text}) {
+  return (
+    <span style={{color: "#3d3d3dff", fontWeight: "bold"}}>
       {text}
     </span>
   )
